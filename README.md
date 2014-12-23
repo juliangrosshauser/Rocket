@@ -1,5 +1,6 @@
 # Rocket
 ![Rocket](https://github.com/juliangrosshauser/rocket/blob/master/logo.png)
+
 *Kickstart your static web development process*
 
 Rocket is a ready to use gulpfile with the following features:
