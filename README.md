@@ -13,16 +13,24 @@ Rocket is a ready to use gulpfile with the following features:
 ## Usage
 
 Install dependencies:
-`npm install`
+```
+npm install
+```
 
 Run Rocket one time (minified files will be in the `dist` directory):
-`gulp`
+```
+gulp
+```
 
 Run Rocket in development mode (this will rerun Rocket and autoreload your browser on file change):
-`gulp dev`
+```
+gulp dev
+```
 
 Clean up files (this will delete the `dist` directory):
-`gulp clean`
+```
+gulp clean
+```
 
 ## License
 
