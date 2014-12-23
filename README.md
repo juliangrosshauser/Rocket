@@ -3,6 +3,8 @@
 
 *Kickstart your static web development process*
 
+---
+
 Rocket is a ready to use gulpfile with the following features:
 
 * HTML minification
