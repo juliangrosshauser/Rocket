@@ -13,6 +13,7 @@ Rocket is a ready to use gulpfile with the following features:
 * Sass to CSS compiling
 * [Autoprefixer](https://github.com/postcss/autoprefixer)
 * Image optimization
+* Autorefresh on file change with [BrowserSync](http://www.browsersync.io)
 
 ## Usage
 
@@ -59,4 +60,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
