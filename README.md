@@ -17,6 +17,11 @@ Rocket is a ready to use gulpfile with the following features:
 
 ## Usage
 
+Install gulp globally if you haven't already:
+```
+npm install -g gulp
+```
+
 Install dependencies:
 ```
 npm install
