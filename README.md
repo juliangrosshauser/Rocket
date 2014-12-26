@@ -27,12 +27,12 @@ Install dependencies:
 $ npm install
 ```
 
-Run Rocket one time (minified files will be in the `dist` directory):
+Run gulp only once (minified files will be in the `dist` directory):
 ```
 $ gulp
 ```
 
-Run Rocket in development mode (this will rerun Rocket and autoreload your browser on file change):
+Run gulp's development task (this will rerun Rocket and autoreload your browser on file change):
 ```
 $ gulp dev
 ```
