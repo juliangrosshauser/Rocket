@@ -18,27 +18,27 @@ Rocket is a ready to use gulpfile with the following features:
 ## Usage
 
 Install gulp globally if you haven't already:
-```
+```sh
 $ npm install -g gulp
 ```
 
 Install dependencies:
-```
+```sh
 $ npm install
 ```
 
 Run gulp only once (minified files will be in the `dist` directory):
-```
+```sh
 $ gulp
 ```
 
 Run gulp's development task (this will rerun Rocket and autoreload your browser on file change):
-```
+```sh
 $ gulp dev
 ```
 
 Clean up files (this will delete the `dist` directory):
-```
+```sh
 $ gulp clean
 ```
 
