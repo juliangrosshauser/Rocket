@@ -1,4 +1,5 @@
 var browserSync = require('browser-sync'),
+    del = require('del'),
     gulp = require('gulp'),
     plugins = require('gulp-load-plugins')();
 
@@ -53,8 +54,8 @@ gulp.task('img', function() {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('clean', function() {
-  return gulp.src('dist', { read: false }).pipe(plugins.clean());
+gulp.task('clean', function(cb) {
+  del('dist', cb);
 });
 
 gulp.task('browser-sync', function() {
