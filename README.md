@@ -5,7 +5,7 @@
 
 ---
 
-Rocket is a ready to use gulpfile with the following features:
+Rocket is a ready-to-use gulpfile with the following features:
 
 * HTML minification
 * CSS minification
