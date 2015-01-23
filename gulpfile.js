@@ -68,7 +68,7 @@ gulp.task('clean', function(cb) {
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-      baseDir: "dist"
+      baseDir: 'dist'
     }
   });
 });
