@@ -1,6 +1,6 @@
 {
   "name": "Rocket",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Kickstart your static website development process",
   "main": "gulpfile.js",
   "scripts": {
