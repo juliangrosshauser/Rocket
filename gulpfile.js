@@ -67,7 +67,8 @@ gulp.task('browser-sync', function() {
     server: {
       baseDir: 'dist'
     },
-    reloadDelay: 500
+    reloadDelay: 500,
+    notify: false
   });
 });
 
