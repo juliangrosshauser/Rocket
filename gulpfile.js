@@ -17,8 +17,7 @@ gulp.task('html', function() {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(size({gzip: false, showFiles: true, title:'minified html'}))
     .pipe(size({gzip: true, showFiles: true, title:'minified gzipped html'}))
-    .pipe(gulp.dest('dist'))
-    .pipe(browserSync.reload({ stream: true }));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('sass', function() {
@@ -50,15 +49,13 @@ gulp.task('js', function() {
   .pipe(uglify({ preserveComments: 'some', outSourceMap: false }))
   .pipe(size({gzip: false, showFiles: true, title:'minified js'}))
   .pipe(size({gzip: true, showFiles: true, title:'minified gzipped js'}))
-  .pipe(gulp.dest('dist/js'))
-  .pipe(browserSync.reload({ stream: true }));
+  .pipe(gulp.dest('dist/js'));
 });
 
 gulp.task('img', function() {
   return gulp.src('img/*')
     .pipe(imagemin({ optimizationLevel: 7, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('dist/img'))
-    .pipe(browserSync.reload({ stream: true }));
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('clean', function(cb) {
@@ -78,8 +75,8 @@ gulp.task('default', ['clean'], function() {
 });
 
 gulp.task('dev', ['browser-sync', 'default'], function() {
-  gulp.watch('html/index.html', ['html']);
+  gulp.watch('html/index.html', ['html', browserSync.reload]);
   gulp.watch('sass/**/*.scss', ['sass']);
-  gulp.watch('js/**/*.js', ['js']);
-  gulp.watch('img/**/*', ['img']);
+  gulp.watch('js/**/*.js', ['js', browserSync.reload]);
+  gulp.watch('img/**/*', ['img', browserSync.reload]);
 });
